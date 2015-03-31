@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/edu/pitt/dbmi/dataset/ConvertCSVtoARFF.java=UTF-8
+encoding//src/edu/pitt/dbmi/dataset/ConvertEAVtoARFF.java=UTF-8
+encoding//src/edu/pitt/dbmi/main/FormatConverter.java=UTF-8
+encoding//src/edu/pitt/dbmi/tools/Tools.java=UTF-8
