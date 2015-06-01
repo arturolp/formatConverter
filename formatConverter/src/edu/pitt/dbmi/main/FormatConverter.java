@@ -18,7 +18,7 @@ import edu.pitt.dbmi.tools.Util;
 public class FormatConverter {
 
 	public static void showInfo(){
-		System.out.println("Expected commands format: -input data.arff [-target class] [-inputFormat eav] [-output Desktop/results/] [-outputFormat ebmc|arff]");
+		System.out.println("Expected commands format: -input data.arff [-target class] [-inputFormat eav|bif] [-output Desktop/results/] [-outputFormat ebmc|arff|xdsl]");
 		System.out.println("   -input data.txt \t data.arff is the input file, or data.csv");
 		System.out.println("   -target class \t the name of the target attribute. Default: class");
 		System.out.println("   -inputFormat eav \t the format of the input data. Default: file extension");
@@ -26,7 +26,7 @@ public class FormatConverter {
 		System.out.println("   -outputFormat ebmc \t Create the file(s) speficied by the new format. Default is arff");
 		System.out.println("   -discretize 0.5 \t Discretize all columns using the cutoff point given. Default is not discretized");
 		System.out.println("   -transpose true \t Transpose the values, rows to columns and columns to rows. Default is false");
-		System.out.println("   -hashTable filename.csv \t A .csv file with the codes and descriptions");
+		System.out.println("   -hashfile filename.csv \t A .csv file with the codes and descriptions");
 	}
 	
 	

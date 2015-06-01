@@ -60,8 +60,9 @@ public class ConvertBIFtoXDSL {
 			if(useCodeDescriptions == true){
 				//System.out.print("id_code = "+id_code[0]);
 				name = codesTable.get(id_code[0]);
-				//System.out.println("  name = "+name);
+				//System.out.println("  name = "+name+" : "+(name==null));
 				if(name==null){
+					//System.out.println("id_code = "+id_code[0]);
 					name = id_code[0];
 				}
 			}
