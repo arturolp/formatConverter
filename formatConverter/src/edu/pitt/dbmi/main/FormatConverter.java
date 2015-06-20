@@ -1,9 +1,7 @@
 package edu.pitt.dbmi.main;
 
-import java.io.File;
-
 import edu.pitt.dbmi.dataset.ConvertARFFtoEBMC;
-import edu.pitt.dbmi.dataset.ConvertBIFtoXDSL;
+import edu.pitt.dbmi.dataset.ConvertBIFtoGENIE;
 import edu.pitt.dbmi.dataset.ConvertCSVtoARFF;
 import edu.pitt.dbmi.dataset.ConvertEAVtoARFF;
 import edu.pitt.dbmi.dataset.UpdateUMLScodesinXDSL;
@@ -27,6 +25,11 @@ public class FormatConverter {
 		System.out.println("   -discretize 0.5 \t Discretize all columns using the cutoff point given. Default is not discretized");
 		System.out.println("   -transpose true \t Transpose the values, rows to columns and columns to rows. Default is false");
 		System.out.println("   -hashfile filename.csv \t A .csv file with the codes and descriptions");
+		System.out.println("   -------");
+		System.out.println("   ARFF to EBMC");
+		System.out.println("   BIF to XDSL|NET");
+		System.out.println("   CSV to ARFF");
+		System.out.println("   EAV to ARFF");
 	}
 	
 	
@@ -92,6 +95,9 @@ public class FormatConverter {
 				else if(args[(1+i)].equalsIgnoreCase("xdsl")){
 					outputFormat = "xdsl";
 				}
+				else if(args[(1+i)].equalsIgnoreCase("net")){
+					outputFormat = "net";
+				}
 			}
 			else if(args[i].equalsIgnoreCase("-hashFile")){
 				hashFile = args[(1+i)];
@@ -142,15 +148,15 @@ public class FormatConverter {
 			ConvertCSVtoARFF conv = new ConvertCSVtoARFF();
 			conv.runner(inputFile, outputPath);
 		}
-		else if(inputFormat.equalsIgnoreCase("bif") && outputFormat.equalsIgnoreCase("xdsl")){
-			System.out.println("BIFtoXDSL");
+		else if(inputFormat.equalsIgnoreCase("bif") && (outputFormat.equalsIgnoreCase("xdsl") || outputFormat.equalsIgnoreCase("net"))){
+			System.out.println("BIFtoGENIE");
 			System.out.println("input = "+inputFile);
 			System.out.println("target = "+target);
 			System.out.println("output = "+outputPath);
 			System.out.println("hashFile = "+hashFile);
 			System.out.println("----");
-			ConvertBIFtoXDSL conv = new ConvertBIFtoXDSL();
-			conv.runner(inputFile, outputPath, hashFile);
+			ConvertBIFtoGENIE conv = new ConvertBIFtoGENIE();
+			conv.runner(inputFile, outputPath, hashFile, outputFormat);
 		}
 		else{
 			System.out.println("inputFormat: "+inputFormat+" - outputformat: "+outputFormat);
