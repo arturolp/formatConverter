@@ -8,7 +8,7 @@ import edu.pitt.dbmi.tools.Tools;
 
 public class ConvertBIFtoGENIE {
 	public String bif = "";
-	Hashtable<String, String> codesTable;
+	public Hashtable<String, String> codesTable;
 	public String hash = "";
 	public String inputName = "";
 	public String out = "";

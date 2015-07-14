@@ -4,6 +4,7 @@ import edu.pitt.dbmi.dataset.ConvertARFFtoEBMC;
 import edu.pitt.dbmi.dataset.ConvertBIFtoGENIE;
 import edu.pitt.dbmi.dataset.ConvertCSVtoARFF;
 import edu.pitt.dbmi.dataset.ConvertEAVtoARFF;
+import edu.pitt.dbmi.dataset.ConvertWekaNBtoGENIE;
 import edu.pitt.dbmi.dataset.UpdateUMLScodesinXDSL;
 import edu.pitt.dbmi.tools.Util;
 /**
@@ -27,7 +28,8 @@ public class FormatConverter {
 		System.out.println("   -hashfile filename.csv \t A .csv file with the codes and descriptions");
 		System.out.println("   -------");
 		System.out.println("   ARFF to EBMC");
-		System.out.println("   BIF to XDSL|NET");
+		System.out.println("   BIF to XDSL | NET");
+		System.out.println("   NBweka to XDSL");
 		System.out.println("   CSV to ARFF");
 		System.out.println("   EAV to ARFF");
 	}
@@ -69,6 +71,9 @@ public class FormatConverter {
 				}
 				else if(args[(1+i)].equalsIgnoreCase("bif")){
 					inputFormat = "bif";
+				}
+				else if(args[(1+i)].equalsIgnoreCase("nbweka")){
+					inputFormat = "nbweka";
 				}
 			}
 			else if(args[i].equalsIgnoreCase("-discretize")){
@@ -156,6 +161,16 @@ public class FormatConverter {
 			System.out.println("hashFile = "+hashFile);
 			System.out.println("----");
 			ConvertBIFtoGENIE conv = new ConvertBIFtoGENIE();
+			conv.runner(inputFile, outputPath, hashFile, outputFormat);
+		}
+		else if(inputFormat.equalsIgnoreCase("nbweka") && (outputFormat.equalsIgnoreCase("xdsl") || outputFormat.equalsIgnoreCase("net"))){
+			System.out.println("NBweka-to-GENIE");
+			System.out.println("input = "+inputFile);
+			System.out.println("target = "+target);
+			System.out.println("output = "+outputPath);
+			System.out.println("hashFile = "+hashFile);
+			System.out.println("----");
+			ConvertWekaNBtoGENIE conv = new ConvertWekaNBtoGENIE();
 			conv.runner(inputFile, outputPath, hashFile, outputFormat);
 		}
 		else{
