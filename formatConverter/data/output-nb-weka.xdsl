@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <smile version="1.0" id="Network1" numsamples="1000">
+	<nodes>
+	<cpt id="class">
+		<state id="N" />
+		<state id="Y" />
+		<probabilities> 0.85 0.15 </probabilities>
+	</cpt>
+	<cpt id="demog_inpat_visit_count">
+		<state id="x__inf_0_5" />
+		<state id="x_0_5_1_5" />
+		<state id="x_1_5_3_5" />
+		<state id="x_3_5_4_5" />
+		<state id="x_4_5_8_5" />
+		<state id="x_8_5_inf" />
+		<parents>class</parents>
+		<probabilities> 0.7429049950307358 0.13131740714837856 0.07612176537711193 0.01593845474288659 0.02473589281113115 0.008981484889755954 0.32985011610724085 0.1551614946168461 0.1861937935402153 0.05763141228625712 0.14418408275279712 0.12697910069664345 </probabilities>
+	</cpt>
+	<cpt id="demog_outpat_visit_count">
+		<state id="x__inf_0_5" />
+		<state id="x_0_5_2_5" />
+		<state id="x_2_5_3_5" />
+		<state id="x_3_5_5_5" />
+		<state id="x_5_5_10_5" />
+		<state id="x_10_5_27_5" />
+		<state id="x_27_5_inf" />
+		<parents>class</parents>
+		<probabilities> 0.5265482653906322 0.18200055213030275 0.05112726603478421 0.0702493788534094 0.08839606147050703 0.06826170976350418 0.013416766356860219 0.23989445910290239 0.15482849604221635 0.05984168865435356 0.10047493403693931 0.16675461741424802 0.20559366754617414 0.07261213720316623 </probabilities>
+	</cpt>
+	<cpt id="lab_hgb_nadir">
+		<state id="x__inf_9_05" />
+		<state id="x_9_05_9_85" />
+		<state id="x_9_85_10_25" />
+		<state id="x_10_25_11_55" />
+		<state id="x_11_55_13_15" />
+		<state id="x_13_15_inf" />
+		<parents>class</parents>
+		<probabilities> 0.16510024228547085 0.07771772411406054 0.048217471178678875 0.20714076519609148 0.27340983519263024 0.22841396203306807 0.3952332398674484 0.13408106041294926 0.05990313535559521 0.16913076726994647 0.14912057099158807 0.0925312261024726 </probabilities>
+	</cpt>
+	<cpt id="lab_wbc_nadir">
+		<state id="x__inf_0_85" />
+		<state id="x_0_85_1_05" />
+		<state id="x_1_05_1_95" />
+		<state id="x_1_95_2_05" />
+		<state id="x_2_05_2_95" />
+		<state id="x_2_95_3_05" />
+		<state id="x_3_05_3_95" />
+		<state id="x_3_95_5_85" />
+		<state id="x_5_85_9_85" />
+		<state id="x_9_85_inf" />
+		<parents>class</parents>
+		<probabilities> 0.011996460913916936 0.20118143020714063 0.010174872488810242 0.05092640782762569 0.014182367024044967 0.027141667534089725 0.02094826688872697 0.10099406682627252 0.25858748828978867 0.3038669719995836 0.07439055038954512 0.1881125911032923 0.04523749685850716 0.0446091982910279 0.062075898466951496 0.022241769288766023 0.05616989193264639 0.13156572003015832 0.2141241517969339 0.1614727318421715 </probabilities>
+	</cpt>
+	<cpt id="lab_k_slope_last2">
+		<state id="x__inf__0_046358" />
+		<state id="x__0_046358__0_017664" />
+		<state id="x__0_017664_0_025768" />
+		<state id="x_0_025768_0_059469" />
+		<state id="x_0_059469_inf" />
+		<parents>class</parents>
+		<probabilities> 0.15423514538558786 0.11075688451602264 0.533996592095861 0.11361512669708129 0.08739625130544715 0.0737058621871786 0.10764484058964689 0.7000342817963662 0.08244772026054165 0.03616729516626671 </probabilities>
+	</cpt>
+	<cpt id="lab_bun_slope_last2">
+		<state id="x__inf__0_586512" />
+		<state id="x__0_586512__0_168765" />
+		<state id="x__0_168765__0_046581" />
+		<state id="x__0_046581_0_176827" />
+		<state id="x_0_176827_0_878157" />
+		<state id="x_0_878157_inf" />
+		<parents>class</parents>
+		<probabilities> 0.043053279846319 0.1625515565851178 0.1775806542742528 0.5258489180179671 0.08401604610429968 0.00694954517204373 0.01383365035448729 0.0935500605222203 0.16496628047726095 0.652775376102369 0.07366418813764482 0.0012104444060176379 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029256">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.7828311645285381 0.07226077193499107 0.1449080635364709 0.9348537641220568 0.06197867173476929 0.0031675641431738993 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029087">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.865343910474683 0.07226077193499107 0.06239531759032597 0.71238517579981 0.06197867173476929 0.22563615246542076 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029072">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9160884209751339 0.07226077193499107 0.011650807089875136 0.8400380107697181 0.06197867173476929 0.09798331749551262 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029070">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9201376746240636 0.07226077193499107 0.007601553440945427 0.8623165452433745 0.06197867173476929 0.0757047830218562 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029220">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.8138815777364672 0.07226077193499107 0.11385765032854182 0.9137366698342309 0.06197867173476929 0.024284658430999896 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029176">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.7957703705067088 0.07226077193499107 0.13196885755830015 0.6821877309682187 0.06197867173476929 0.25583359729701194 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029309">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.6994349450589903 0.07226077193499107 0.22830428300601865 0.588111075915954 0.06197867173476929 0.34991025234927675 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029305">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.8955108501592093 0.07226077193499107 0.03222837790579963 0.9375989863794741 0.06197867173476929 4.223418857565199E-4 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029436">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.889216101304964 0.07226077193499107 0.03852312676004502 0.8477457501847746 0.06197867173476929 0.09027557808045612 </probabilities>
+	</cpt>
+	<cpt id="meds_n0000029370">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9099409177081225 0.07226077193499107 0.01779831035688649 0.9375989863794741 0.06197867173476929 4.223418857565199E-4 </probabilities>
+	</cpt>
+	<cpt id="vitals_n_abnormal">
+		<state id="x__inf_42_5" />
+		<state id="x_42_5_136_5" />
+		<state id="x_136_5_287_5" />
+		<state id="x_287_5_inf" />
+		<parents>class</parents>
+		<probabilities> 0.7048793526147947 0.21375509225976516 0.04820365352356726 0.033161901601872844 0.6167089142374313 0.23489649345162653 0.07329953527672159 0.07509505703422054 </probabilities>
+	</cpt>
+	<cpt id="vitals_respiratory_rate_apex">
+		<state id="x__inf_23_5" />
+		<state id="x_23_5_42_5" />
+		<state id="x_42_5_82_5" />
+		<state id="x_82_5_inf" />
+		<parents>class</parents>
+		<probabilities> 0.10056793037321139 0.4798089688744653 0.3353739489600236 0.08424915179229975 0.13219909119729473 0.47532494980450174 0.28215153756736766 0.11032442143083589 </probabilities>
+	</cpt>
+	<cpt id="nurse_stooling_last">
+		<state id="A" />
+		<state id="M" />
+		<state id="N" />
+		<parents>class</parents>
+		<probabilities> 0.4756643251756118 0.0026747993900457464 0.5216608754343425 0.3521921764242583 0.0010501443948542925 0.6467576791808873 </probabilities>
+	</cpt>
+	<cpt id="nurse_cough_last">
+		<state id="A" />
+		<state id="M" />
+		<state id="N" />
+		<parents>class</parents>
+		<probabilities> 0.3949025386831 0.0035836291781097193 0.6015138321387903 0.30252670849584534 0.0013566220111921317 0.6961166694929625 </probabilities>
+	</cpt>
+	<cpt id="nlp_c0392920">
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9866188109699982 0.013381189030001841 0.8527983104540655 0.14720168954593452 </probabilities>
+	</cpt>
+	<cpt id="los_days_in_hospital">
+		<state id="x__inf_1_5" />
+		<state id="x_1_5_2_5" />
+		<state id="x_2_5_3_5" />
+		<state id="x_3_5_14_5" />
+		<state id="x_14_5_inf" />
+		<parents>class</parents>
+		<probabilities> 0.392487070472825 0.20609942392284616 0.11799458892385843 0.2354186222001362 0.04800029448033424 0.23456138498891588 0.1575002639079489 0.12815369998944368 0.3621872690805447 0.11759738203314683 </probabilities>
+	</cpt>
+	<cpt id="dx_v58_1">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9913677274484181 5.521709521267785E-5 0.008577055456369291 0.8200823566677226 1.0558547143912998E-4 0.17981205786083834 </probabilities>
+	</cpt>
+	<cpt id="dx_v70_7">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9901529513537392 5.521709521267785E-5 0.009791831551048204 0.9668461619681132 1.0558547143912998E-4 0.03304825256044768 </probabilities>
+	</cpt>
+	<cpt id="drg_severity_of_illness">
+		<state id="x__inf_0_5" />
+		<state id="x_0_5_1_5" />
+		<state id="x_1_5_2_5" />
+		<state id="x_2_5_3_5" />
+		<state id="x_3_5_inf" />
+		<parents>class</parents>
+		<probabilities> 0.036829508135888825 0.4238083752342431 0.33410022821307306 0.15101026031133458 0.054251628105460414 0.03970697526276675 0.18558233358105955 0.39112432317655804 0.2654209576388152 0.11816541034080051 </probabilities>
+	</cpt>
+	<cpt id="drg_apr_drg_141">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9483352045793377 0.0029633174430803775 0.04870147797758186 0.9872241579558653 0.0019005384859043396 0.010875303558230388 </probabilities>
+	</cpt>
+	<cpt id="drg_hcfa_drg_951">
+		<state id="F" />
+		<state id="M" />
+		<state id="T" />
+		<parents>class</parents>
+		<probabilities> 0.9884228157037419 0.0029633174430803775 0.008613866853177743 0.9710695808256784 0.0019005384859043396 0.027029880688417274 </probabilities>
+	</cpt>
+	</nodes>
+	<extensions>
+	 <genie version="1.0" app="GeNIe 2.0.2603.0" name="Flu" faultnameformat="nodestate">
+		<node id="class">
+			<name>class</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="demog_inpat_visit_count">
+			<name>demog_inpat_visit_count</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="demog_outpat_visit_count">
+			<name>demog_outpat_visit_count</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="lab_hgb_nadir">
+			<name>lab_hgb_nadir</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="lab_wbc_nadir">
+			<name>lab_wbc_nadir</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="lab_k_slope_last2">
+			<name>lab_k_slope_last2</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="lab_bun_slope_last2">
+			<name>lab_bun_slope_last2</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029256">
+			<name>meds_n0000029256</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029087">
+			<name>meds_n0000029087</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029072">
+			<name>meds_n0000029072</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029070">
+			<name>meds_n0000029070</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029220">
+			<name>meds_n0000029220</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029176">
+			<name>meds_n0000029176</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029309">
+			<name>meds_n0000029309</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029305">
+			<name>meds_n0000029305</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029436">
+			<name>meds_n0000029436</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="meds_n0000029370">
+			<name>meds_n0000029370</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="vitals_n_abnormal">
+			<name>vitals_n_abnormal</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="vitals_respiratory_rate_apex">
+			<name>vitals_respiratory_rate_apex</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="nurse_stooling_last">
+			<name>nurse_stooling_last</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="nurse_cough_last">
+			<name>nurse_cough_last</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="nlp_c0392920">
+			<name>nlp_c0392920</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="los_days_in_hospital">
+			<name>los_days_in_hospital</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="dx_v58_1">
+			<name>dx_v58_1</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="dx_v70_7">
+			<name>dx_v70_7</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="drg_severity_of_illness">
+			<name>drg_severity_of_illness</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="drg_apr_drg_141">
+			<name>drg_apr_drg_141</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+		<node id="drg_hcfa_drg_951">
+			<name>drg_hcfa_drg_951</name>
+			<interior color="e5f6f7" />
+			<outline color="000080" />
+			<font color="000000" name="Arial" size="8" />
+			<position>225 489 297 540</position>
+		</node>
+	 </genie>
+	</extensions>
+</smile>

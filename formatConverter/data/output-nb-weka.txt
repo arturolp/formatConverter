@@ -1,0 +1,264 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     /home/victor/Readmission/ARFF/Combined/LOSCorrectionUsing9Sources_demog_lab_meds_vitals_nurse_nlp_los_dx_drg/training.arff-weka.filters.supervised.attribute.Discretize-R1,2,3,4,5,6,7,8,9,10,11-precision6-weka.filters.unsupervised.attribute.Remove-R57,66,149,156,198,210,250-weka.filters.unsupervised.attribute.RemoveByName-EDATE|dx_awgwvaehjmrc/yfxcqigfq|dx_93172014|dx_474437019|dx_awgwvaehjmrc/yfxcqigfq|dx_133401013|dx_2554146015|dx_8ooxpqdxvjl7izjxn4waeg-weka.filters.unsupervised.attribute.Remove-V-R1-251-weka.filters.unsupervised.attribute.RemoveByName-Edemog_inpat_visit_count|dx_v58.1|drg_apr_drg_693|demog_outpat_visit_count|drg_risk_of_mortality|lab_hgb_nadir|lab_wbc_nadir|lab_k_slope_last2|lab_bun_slope_last2|nlp_c0392920|drg_hcfa_drg_847|meds_n0000029256|drg_severity_of_illness|meds_n0000029087|los_days_in_hospital|meds_n0000029072|meds_n0000029070|meds_n0000029220|meds_n0000029176|dx_170.7|dx_e933.1|dx_194.0|dx_288.0|dx_579.3|dx_996.6|nurse_stooling_last|drg_hcfa_drg_410|meds_n0000029309|dx_v44.1|dx_198.5|dx_204.0|meds_n0000029305|drg_apr_drg_206|dx_v15.3|dx_197.0|vitals_n_abnormal|drg_hcfa_drg_839|dx_170.9|dx_v45.7|dx_v42.8|meds_n0000029436|drg_apr_drg_141|dx_e879.8|nurse_cough_last|dx_999.3|drg_hcfa_drg_203|dx_v58.6|dx_e878.1|dx_197.7|drg_hcfa_drg_809|drg_apr_drg_420|drg_hcfa_drg_315|dx_996.8|meds_n0000029370|dx_780.6|dx_573.8|dx_e878.0|drg_hcfa_drg_639|dx_155.0|dx_v70.7|dx_171.6|dx_170.6|drg_apr_drg_662|drg_apr_drg_383|drg_hcfa_drg_838|dx_528.0|drg_apr_drg_660|dx_790.7|dx_282.6|drg_hcfa_drg_603|dx_996.1|drg_hcfa_drg_314|dx_205.0|dx_959.0|vitals_respiratory_rate_apex|drg_hcfa_drg_812|dx_v42.7|dx_285.9|drg_hcfa_drg_951|dx_783.6|dx_v44.2|drg_hcfa_drg_144|dx_189.0|drg_apr_drg_139|dx_v49.8|drg_apr_drg_861|drg_hcfa_drg_343|dx_786.0|dx_171.3|dx_v87.4|dx_v44.4|dx_540.9|dx_995.9|drg_hcfa_drg_848|dx_v12.5|dx_170.3|drg_apr_drg_138|dx_v49.7|dx_170.4|dx_171.9|drg_apr_drg_225|dx_285.2|drg_apr_drg_1|dx_171.2|dx_v44.0|dx_041.3|dx_200.2|dx_401.9|dx_466.1|drg_apr_drg_97|drg_hcfa_drg_134|drg_apr_drg_252|dx_038.4|dx_170.1|dx_493.9|dx_783.3|dx_170.0|dx_750.5|dx_e932.0|dx_197.6|dx_212.2|dx_250.1|dx_486|dx_198.8|dx_416.8|dx_171.0|dx_250.0|dx_212.1|drg_apr_drg_57|drg_apr_drg_690|dx_e944.5|dx_201.5|dx_276.7|dx_536.4|dx_382.9|dx_112.5|drg_apr_drg_222|dx_041.8|drg_hcfa_drg_328|drg_hcfa_drg_846|drg_hcfa_drg_5|drg_hcfa_drg_194|dx_284.1|drg_hcfa_drg_195|dx_198.3|dx_v45.2|dx_v46.1|dx_201.9|dx_008.4|drg_apr_drg_812|dx_285.3|drg_apr_drg_95|dx_287.5|dx_358.0|dx_038.1|dx_787.9|dx_276.8|dx_112.8|drg_apr_drg_313|dx_576.8|dx_275.2|dx_682.9|drg_hcfa_drg_98|dx_284.8|drg_hcfa_drg_494|drg_apr_drg_55|drg_apr_drg_681|dx_785.5|dx_196.2|drg_hcfa_drg_918|drg_hcfa_drg_87|dx_275.3|drg_apr_drg_691|drg_apr_drg_315|dx_996.7|dx_200.0|dx_e826.1|dx_682.0|dx_191.9|dx_v10.8|dx_275.4|drg_hcfa_drg_101|dx_v58.0|drg_hcfa_drg_482|dx_564.0|dx_e849.0|dx_585.6|dx_273.8|dx_160.3|drg_apr_drg_53|dx_682.5|drg_hcfa_drg_794|dx_474.1|drg_apr_drg_721|dx_287.4|dx_171.5|dx_786.2|dx_910.0|dx_041.0|dx_331.4|dx_277.8|dx_200.1|dx_564.8|dx_276.1|dx_276.5|dx_e884.9|dx_518.8|dx_788.4|drg_hcfa_drg_202|dx_410.4|drg_hcfa_drg_793|dx_572.3|dx_v09.8|drg_apr_drg_308|dx_v16.3|dx_289.9|dx_821.0|dx_170.8|dx_v16.4|dx_v43.6|dx_812.4|dx_464.1|dx_196.3|dx_770.7|dx_199.1|dx_197.2|dx_577.1|dx_572.8|dx_255.4|dx_212.3|drg_apr_drg_343|dx_576.1|drg_apr_drg_92|dx_202.8|dx_778.4|drg_hcfa_drg_90|dx_873.4|dx_196.0|dx_198.4|dx_160.4|dx_197.8|dx_345.9|dx_783.4|dx_775.5|dx_829.0|dx_751.6|dx_411.9|dx_183.0|dx_742.3|dx_916.0|READMITTED-V-weka.filters.unsupervised.attribute.Reorder-R2,3,6,7,8,9,200,141,69,71,48,116,166,197,45,134,10,11,233,123,46,1,158,92,173,35,205,29,195,89,150,73,165,191,95,244,127,125,31,43,183,187,201,74,119,182,219,42,28,93,153,113,210,193,250,234,118,104,137,68,154,17,174,33,226,70,181,148,54,88,16,94,39,101,32,66,237,192,231,79,177,90,217,67,91,130,121,186,37,86,75,161,206,34,85,97,143,129,24,199,213,21,126,155,159,245,58,132,120,102,230,211,175,238,23,103,212,110,55,160,84,247,109,145,190,208,51,179,122,111,41,44,168,108,131,63,53,227,225,220,172,235,13,198,83,124,232,207,25,139,40,47,194,196,81,128,180,20,96,115,56,62,246,228,26,164,189,117,203,142,99,209,178,15,87,236,156,64,184,18,204,22,215,65,14,214,185,241,171,5,135,4,140,106,216,100,60,133,249,151,49,224,221,223,59,12,152,222,248,78,242,82,240,138,243,50,105,36,239,19,144,169,218,57,136,229,114,30,52,38,76,80,157,146,149,112,107,170,72,167,188,147,202,27,61,162,98,163,176,77,251-weka.filters.unsupervised.attribute.Remove-V-R1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,192,196,209,251
+Instances:    63796
+Attributes:   28
+              demog_inpat_visit_count
+              demog_outpat_visit_count
+              lab_hgb_nadir
+              lab_wbc_nadir
+              lab_k_slope_last2
+              lab_bun_slope_last2
+              meds_n0000029256
+              meds_n0000029087
+              meds_n0000029072
+              meds_n0000029070
+              meds_n0000029220
+              meds_n0000029176
+              meds_n0000029309
+              meds_n0000029305
+              meds_n0000029436
+              meds_n0000029370
+              vitals_n_abnormal
+              vitals_respiratory_rate_apex
+              nurse_stooling_last
+              nurse_cough_last
+              nlp_c0392920
+              los_days_in_hospital
+              dx_v58.1
+              dx_v70.7
+              drg_severity_of_illness
+              drg_apr_drg_141
+              drg_hcfa_drg_951
+              READMITTED
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                 Class
+Attribute                            N       Y
+                                (0.85)  (0.15)
+===============================================
+demog_inpat_visit_count
+  '(-inf-0.5]'                  40365.0  3125.0
+  '(0.5-1.5]'                    7135.0  1470.0
+  '(1.5-3.5]'                    4136.0  1764.0
+  '(3.5-4.5]'                     866.0   546.0
+  '(4.5-8.5]'                    1344.0  1366.0
+  '(8.5-inf)'                     488.0  1203.0
+  [total]                       54334.0  9474.0
+
+demog_outpat_visit_count
+  '(-inf-0.5]'                  28610.0  2273.0
+  '(0.5-2.5]'                    9889.0  1467.0
+  '(2.5-3.5]'                    2778.0   567.0
+  '(3.5-5.5]'                    3817.0   952.0
+  '(5.5-10.5]'                   4803.0  1580.0
+  '(10.5-27.5]'                  3709.0  1948.0
+  '(27.5-inf)'                    729.0   688.0
+  [total]                       54335.0  9475.0
+
+lab_hgb_nadir
+  '(-inf-9.05]'                  6201.0  3101.0
+  '(9.05-9.85]'                  2919.0  1052.0
+  '(9.85-10.25]'                 1811.0   470.0
+  '(10.25-11.55]'                7780.0  1327.0
+  '(11.55-13.15]'               10269.0  1170.0
+  '(13.15-inf)'                  8579.0   726.0
+  [total]                       37559.0  7846.0
+
+lab_wbc_nadir
+  '(-inf-0.85]'                   461.0   592.0
+  '(0.85-1.05]'                  7731.0  1497.0
+  '(1.05-1.95]'                   391.0   360.0
+  '(1.95-2.05]'                  1957.0   355.0
+  '(2.05-2.95]'                   545.0   494.0
+  '(2.95-3.05]'                  1043.0   177.0
+  '(3.05-3.95]'                   805.0   447.0
+  '(3.95-5.85]'                  3881.0  1047.0
+  '(5.85-9.85]'                  9937.0  1704.0
+  '(9.85-inf)'                  11677.0  1285.0
+  [total]                       38428.0  7958.0
+
+lab_k_slope_last2
+  '(-inf--0.046358]'             2806.0   430.0
+  '(-0.046358--0.017664]'        2015.0   628.0
+  '(-0.017664-0.025768]'         9715.0  4084.0
+  '(0.025768-0.059469]'          2067.0   481.0
+  '(0.059469-inf)'               1590.0   211.0
+  [total]                       18193.0  5834.0
+
+lab_bun_slope_last2
+  '(-inf--0.586512]'              762.0    80.0
+  '(-0.586512--0.168765]'        2877.0   541.0
+  '(-0.168765--0.046581]'        3143.0   954.0
+  '(-0.046581-0.176827]'         9307.0  3775.0
+  '(0.176827-0.878157]'          1487.0   426.0
+  '(0.878157-inf)'                123.0     7.0
+  [total]                       17699.0  5783.0
+
+meds_n0000029256
+  F                             42532.0  8854.0
+  M                              3926.0   587.0
+  T                              7873.0    30.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029087
+  F                             47015.0  6747.0
+  M                              3926.0   587.0
+  T                              3390.0  2137.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029072
+  F                             49772.0  7956.0
+  M                              3926.0   587.0
+  T                               633.0   928.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029070
+  F                             49992.0  8167.0
+  M                              3926.0   587.0
+  T                               413.0   717.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029220
+  F                             44219.0  8654.0
+  M                              3926.0   587.0
+  T                              6186.0   230.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029176
+  F                             43235.0  6461.0
+  M                              3926.0   587.0
+  T                              7170.0  2423.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029309
+  F                             38001.0  5570.0
+  M                              3926.0   587.0
+  T                             12404.0  3314.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029305
+  F                             48654.0  8880.0
+  M                              3926.0   587.0
+  T                              1751.0     4.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029436
+  F                             48312.0  8029.0
+  M                              3926.0   587.0
+  T                              2093.0   855.0
+  [total]                       54331.0  9471.0
+
+meds_n0000029370
+  F                             49438.0  8880.0
+  M                              3926.0   587.0
+  T                               967.0     4.0
+  [total]                       54331.0  9471.0
+
+vitals_n_abnormal
+  '(-inf-42.5]'                 38239.0  5839.0
+  '(42.5-136.5]'                11596.0  2224.0
+  '(136.5-287.5]'                2615.0   694.0
+  '(287.5-inf)'                  1799.0   711.0
+  [total]                       54249.0  9468.0
+
+vitals_respiratory_rate_apex
+  '(-inf-23.5]'                  5454.0  1251.0
+  '(23.5-42.5]'                 26021.0  4498.0
+  '(42.5-82.5]'                 18188.0  2670.0
+  '(82.5-inf)'                   4569.0  1044.0
+  [total]                       54232.0  9463.0
+
+nurse_stooling_last
+  A                             19028.0  2683.0
+  M                               107.0     8.0
+  N                             20868.0  4927.0
+  [total]                       40003.0  7618.0
+
+nurse_cough_last
+  A                             11791.0  1784.0
+  M                               107.0     8.0
+  N                             17960.0  4105.0
+  [total]                       29858.0  5897.0
+
+nlp_c0392920
+  M                             53603.0  8076.0
+  T                               727.0  1394.0
+  [total]                       54330.0  9470.0
+
+los_days_in_hospital
+  '(-inf-1.5]'                  21325.0  2222.0
+  '(1.5-2.5]'                   11198.0  1492.0
+  '(2.5-3.5]'                    6411.0  1214.0
+  '(3.5-14.5]'                  12791.0  3431.0
+  '(14.5-inf)'                   2608.0  1114.0
+  [total]                       54333.0  9473.0
+
+dx_v58.1
+  F                             53862.0  7767.0
+  M                                 3.0     1.0
+  T                               466.0  1703.0
+  [total]                       54331.0  9471.0
+
+dx_v70.7
+  F                             53796.0  9157.0
+  M                                 3.0     1.0
+  T                               532.0   313.0
+  [total]                       54331.0  9471.0
+
+drg_severity_of_illness
+  '(-inf-0.5]'                   1985.0   374.0
+  '(0.5-1.5]'                   22842.0  1748.0
+  '(1.5-2.5]'                   18007.0  3684.0
+  '(2.5-3.5]'                    8139.0  2500.0
+  '(3.5-inf)'                    2924.0  1113.0
+  [total]                       53897.0  9419.0
+
+drg_apr_drg_141
+  F                             51524.0  9350.0
+  M                               161.0    18.0
+  T                              2646.0   103.0
+  [total]                       54331.0  9471.0
+
+drg_hcfa_drg_951
+  F                             53702.0  9197.0
+  M                               161.0    18.0
+  T                               468.0   256.0
+  [total]                       54331.0  9471.0
+
+
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       54365               85.2169 %
+Incorrectly Classified Instances      9431               14.7831 %
+Kappa statistic                          0.4403
+Mean absolute error                      0.1657
+Root mean squared error                  0.345 
+Relative absolute error                 65.5443 %
+Root relative squared error             97.0534 %
+Coverage of cases (0.95 level)          94.2144 %
+Mean rel. region size (0.95 level)      63.5126 %
+Total Number of Instances            63796     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.904    0.444    0.921      0.904    0.912      0.441    0.840     0.964     N
+                 0.556    0.096    0.502      0.556    0.528      0.441    0.840     0.534     Y
+Weighted Avg.    0.852    0.392    0.859      0.852    0.855      0.441    0.840     0.900     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 49098  5230 |     a = N
+  4201  5267 |     b = Y
+
