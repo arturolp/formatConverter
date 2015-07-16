@@ -36,11 +36,21 @@ public class ConvertWekaNBtoGENIE {
 		ArrayList<String> lines = new ArrayList<String>();
 
 		boolean copy = false;
+		int empty = 0;
 		for(int i = 0; i < linesAll.length; i++){
 			if(linesAll[i].equals("Naive Bayes Classifier")){
 				copy=true;
 			}
-			else if(linesAll[i].contains("Time taken to build model")){
+			if(linesAll[i].equals("")){
+				empty++;
+				if(empty == 2){
+					copy = false;
+				}
+			}
+			else if(!linesAll[i].equals("")){
+				empty=0;
+			}
+			else if(copy == true && linesAll[i].contains("Time taken to build model")){
 				copy=false;
 			}
 			if(copy == true){
