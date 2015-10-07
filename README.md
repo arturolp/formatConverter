@@ -35,7 +35,7 @@ Expected commands format:
 ```
 
 | Parameter | Example | Description |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | -input | data.txt 	 |			data.arff is the input file, or data.csv |
 | -target | class 	 	|		the name of the target attribute. Default: class |
 | -inputFormat | eav	 |			the format of the input data. Default: file extension |
