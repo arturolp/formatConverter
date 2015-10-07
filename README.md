@@ -2,11 +2,6 @@
 A java project to convert datasets between different formats (arff, eav, nam/cas)
 
 
-## Description 
-A tool for converting between different file formats
-
-
-
 ## Examples
 <b>Example BIF to XDSL:</b>
 ```
