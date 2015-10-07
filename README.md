@@ -26,7 +26,7 @@ java -jar formatConverter.jar -input DS2.csv -inputFormat csv -outputFormat arff
 ## Configuration
 Expected commands format: 
 ```
--input data.arff [-target class] [-inputFormat eav] [-output Desktop/results/] [-outputFormat ebmc|arff]
+-input data.arff [-target class] [-inputFormat eav] [-output Desktop/results/] [-outputFormat ebmc|arff] [-discretize 0.5] [-transpose false] [-hashtable table.csv]
 ```
 
 | Parameter | Example | Description |
