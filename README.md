@@ -10,17 +10,14 @@ A tool for converting between different file formats
 
 Examples
 ===================
-Example BIF to XDSL:
-
+<b>Example BIF to XDSL:</b>
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -hashfile umlscodes.xml
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -target BC0021400
 
 Example ARFF to EBMC:
-
 java -jar formatConverter.jar -input DS2.arff -inputFormat arff -outputFormat ebmc
 
 Example EAV to ARFF:
-
 java -jar formatConverter.jar -input DS2-eav.csv -inputFormat eav -outputFormat arff
 
 Example CSV to ARFF:
