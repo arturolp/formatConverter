@@ -47,7 +47,7 @@ Expected commands format:
 
 
 
-## EAV.CSV File Format
+## Entity Attribute Value File Format
 Column 1: the ID of the entity
 Column 2: the Attribute CODE
 Column 3: the Attribute NAME
