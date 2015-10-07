@@ -8,7 +8,10 @@ A java project to convert datasets between different formats (arff, eav, nam/cas
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -hashfile umlscodes.xml
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -target BC0021400
 ```
-
+<b>Example Naïve Bayes Weka to XDSL:</b>
+```
+java -jar formatConverter.jar -input modelMedLee.model -inputFormat NBweka -outputFormat xdsl
+```
 <b>Example ARFF to EBMC:</b>
 ```
 java -jar formatConverter.jar -input DS2.arff -inputFormat arff -outputFormat ebmc
