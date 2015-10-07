@@ -46,10 +46,3 @@ Expected commands format:
 | -hashTable | filename.csv	|	A .csv file with the codes and descriptions |
 
 
-
-## Entity Attribute Value File Format
-Column 1: the ID of the entity
-Column 2: the Attribute CODE
-Column 3: the Attribute NAME
-Column 4: the value recorded
-
