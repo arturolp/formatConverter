@@ -2,32 +2,37 @@
 A java project to convert datasets between different formats (arff, eav, nam/cas)
 
 
-Description
-===================
+## Description 
 A tool for converting between different file formats
 
 
 
-Examples
-===================
+## Examples
 <b>Example BIF to XDSL:</b>
+```
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -hashfile umlscodes.xml
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -target BC0021400
+```
 
 <b>Example ARFF to EBMC:</b>
+```
 java -jar formatConverter.jar -input DS2.arff -inputFormat arff -outputFormat ebmc
-
+```
 <b>Example EAV to ARFF:</b>
+````
 java -jar formatConverter.jar -input DS2-eav.csv -inputFormat eav -outputFormat arff
-
+```
 <b>Example CSV to ARFF:</b>
+```
 java -jar formatConverter.jar -input DS2.csv -inputFormat csv -outputFormat arff
+```
 
 
-
-Configuration
-===================
-Expected commands format: -input data.arff [-target class] [-inputFormat eav] [-output Desktop/results/] [-outputFormat ebmc|arff]
+## Configuration
+Expected commands format: 
+```
+-input data.arff [-target class] [-inputFormat eav] [-output Desktop/results/] [-outputFormat ebmc|arff]
+```
    -input data.txt 	 			data.arff is the input file, or data.csv
    -target class 	 			the name of the target attribute. Default: class
    -inputFormat eav	 			the format of the input data. Default: file extension
@@ -39,8 +44,7 @@ Expected commands format: -input data.arff [-target class] [-inputFormat eav] [-
 
 
 
-EAV.CSV File Format
-===================
+## EAV.CSV File Format
 Column 1: the ID of the entity
 Column 2: the Attribute CODE
 Column 3: the Attribute NAME
