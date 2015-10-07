@@ -14,14 +14,13 @@ Examples
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -hashfile umlscodes.xml
 java -jar formatConverter.jar -input exampleBIF.xml -inputFormat bif -outputFormat xdsl -target BC0021400
 
-Example ARFF to EBMC:
+<b>Example ARFF to EBMC:</b>
 java -jar formatConverter.jar -input DS2.arff -inputFormat arff -outputFormat ebmc
 
-Example EAV to ARFF:
+<b>Example EAV to ARFF:</b>
 java -jar formatConverter.jar -input DS2-eav.csv -inputFormat eav -outputFormat arff
 
-Example CSV to ARFF:
-
+<b>Example CSV to ARFF:</b>
 java -jar formatConverter.jar -input DS2.csv -inputFormat csv -outputFormat arff
 
 
