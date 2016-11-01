@@ -510,7 +510,7 @@ public class Tools {
 		return newValue;
 	}
 
-	public static Instances toInstances(double[][] arr, Instances inst) {
+/*public static Instances toInstances(double[][] arr, Instances inst) {
 
 		Instances data = new Instances(inst, 0);
 
@@ -520,7 +520,7 @@ public class Tools {
 		}
 		return data;
 
-	}
+	}*/
 
 	public static double[][] toArray(Instances data) {
 		double[][] d = new double[data.numInstances()][data.instance(0)

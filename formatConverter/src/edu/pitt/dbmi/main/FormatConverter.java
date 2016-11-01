@@ -9,7 +9,7 @@ import edu.pitt.dbmi.dataset.UpdateUMLScodesinXDSL;
 import edu.pitt.dbmi.tools.Util;
 /**
  *
- * @author Arturo L�pez Pineda
+ * @author Arturo Lopez Pineda
  * 
  * email: arl68@pitt.edu
  * 
@@ -17,7 +17,7 @@ import edu.pitt.dbmi.tools.Util;
 public class FormatConverter {
 
 	public static void showInfo(){
-		System.out.println("formatConverter version 1.2");
+		System.out.println("formatConverter version 1.2.1");
 		System.out.println("Expected commands format: -input data.arff [-target class] [-inputFormat eav|bif] [-output Desktop/results/] [-outputFormat ebmc|arff|xdsl]");
 		System.out.println("   -input data.txt \t data.arff is the input file, or data.csv");
 		System.out.println("   -target class \t the name of the target attribute. Default: class");
