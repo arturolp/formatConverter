@@ -17,9 +17,10 @@ java -jar formatConverter.jar -input modelMedLee.model -inputFormat NBweka -outp
 java -jar formatConverter.jar -input DS2.arff -inputFormat arff -outputFormat ebmc
 ```
 <b>Example EAV to ARFF:</b>
-````
+```
 java -jar formatConverter.jar -input DS2-eav.csv -inputFormat eav -outputFormat arff
 ```
+
 <b>Example CSV to ARFF:</b>
 ```
 java -jar formatConverter.jar -input DS2.csv -inputFormat csv -outputFormat arff
